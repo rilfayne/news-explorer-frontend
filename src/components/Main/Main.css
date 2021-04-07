@@ -1,0 +1,142 @@
+.main {
+    background: url("../../images/georgia-de-lotz--UsJoNxLaNo-unsplash.png") no-repeat;
+    background-size: cover;
+    max-width: 1440px;
+}
+
+.main_saved-news {
+    background: white;
+}
+
+.main__title {
+    font-family: 'Roboto Slab';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 60px;
+    line-height: 64px;
+    color: white;
+    margin: 0;
+    max-width: 608px;
+}
+
+.main__title_saved-news {
+    color: black;
+    font-size: 40px;
+    line-height: 46px;
+    max-width: 530px;
+}
+
+.main__container {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0 auto 0;
+    max-width: 608px;
+    padding-top: 80px;
+}
+
+.main__container_saved-news {
+    margin: 40px 0 56px 104px;
+}
+
+.main__subtitle {
+    color: white;
+    margin: 32px 0 0;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 24px;
+    max-width: 545px;
+}
+
+.main__subtitle_saved-news {
+    color: rgba(26, 27, 34, 0.5);
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 24px;
+    margin: 0 0 28px;
+}
+
+.main__description_saved-news {
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 24px;
+    margin: 30px 0 0;
+}
+
+.main__description_bold {
+    font-weight: bold;
+}
+
+@media screen and (max-width: 880px) {
+    .main__title_saved-news {
+        max-width: 336px;
+        font-size: 30px;
+        line-height: 34px;
+    }
+
+    .main__container_saved-news {
+        margin: 24px 16px 32px 40px;
+    }
+
+    .main__subtitle_saved-news {
+        font-size: 14px;
+        margin: 0 0 16px;
+    }
+
+    .main__description_saved-news {
+        margin: 16px 0 0;
+        font-size: 14px;
+    }
+
+    .main__container {
+        margin: 38px auto 0;
+        max-width: 452px;
+    }
+
+    .main__title {
+        max-width: 385px;
+        font-size: 36px;
+        line-height: 40px;
+    }
+
+    .main__subtitle {
+        max-width: 452px;
+        margin: 16px 0 0;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .main__container {
+        margin: 0 auto;
+        max-width: 285px;
+        padding-top: 32px;
+    }
+
+    .main__container_menu-opened {
+        padding-top: 90px;
+    }
+
+    .main {
+        background: url("../../images/mobile-bg.png") no-repeat;
+        background-size: cover;
+    }
+
+    .main_saved-news {
+        background: white;
+    }
+
+    .main__subtitle_saved-news {
+        font-size: 12px;
+    }
+
+    .main__container_saved-news {
+        margin: 0 auto 32px;
+        padding-top: 64px;
+    }
+
+    .main__description_saved-news {
+        font-size: 18px;
+    }
+}

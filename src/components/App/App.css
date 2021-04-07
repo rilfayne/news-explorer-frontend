@@ -1,1 +1,8 @@
-
+.page {
+    max-width: 1440px;
+    font-family: 'Roboto', 'Arial', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-weight: normal;
+    min-height: 100vh;
+}
