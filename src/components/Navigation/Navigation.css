@@ -123,13 +123,13 @@
     }
 }
 
-@media screen and (min-width: 501px) {
+@media screen and (min-width: 601px) {
     .navigation {
         display: flex;
     }
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 600px) {
     .navigation {
         flex-direction: column;
         padding: 0 16px;
