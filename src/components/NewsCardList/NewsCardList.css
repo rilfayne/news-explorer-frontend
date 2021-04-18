@@ -44,6 +44,10 @@
     cursor: pointer;
 }
 
+.news-card-list__button_hidden {
+    display: none;
+}
+
 .news-card-list__button:hover {
     opacity: .9;
 }

@@ -3,7 +3,7 @@ import './SavedNewsHeader.css'
 import Navigation from '../Navigation/Navigation'
 import { Link, Route, Switch } from 'react-router-dom'
 
-function SavedNewsHeader({ onMenuClick, isMenuOpened, onMenuClose }) {
+function SavedNewsHeader({ onMenuClick, isMenuOpened, onMenuClose, onLogout }) {
     return <Switch>
         <Route path="*">
             <header className={ `header header_saved-news ${ isMenuOpened && 'header_menu-opened' }` }>
@@ -17,7 +17,7 @@ function SavedNewsHeader({ onMenuClick, isMenuOpened, onMenuClose }) {
                     </Link>
                     <button type="button" className={ `header__button_saved-news ${ isMenuOpened && 'header__button_menu-opened' }` } onClick={ onMenuClick } />
                 </div>
-                <Navigation isMenuOpened={ isMenuOpened } onMenuClose={ onMenuClose }/>
+                <Navigation isMenuOpened={ isMenuOpened } onMenuClose={ onMenuClose } onLogout={ onLogout }/>
             </header>
             <div className={ `header-overlay ${ isMenuOpened && 'header-overlay_menu-opened' }` }/>
         </Route>
