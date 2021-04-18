@@ -3,7 +3,7 @@ import { Switch, Route, Link } from 'react-router-dom'
 import './Header.css'
 import Navigation from '../Navigation/Navigation'
 
-function Header({ onLogin, loggedIn, isMenuOpened, onMenuClick, onMenuClose, isSomePopupOpen }) {
+function Header({ onLogin, loggedIn, isMenuOpened, onMenuClick, onMenuClose, isSomePopupOpen, onLogout }) {
     return <Switch>
         <Route path="*">
             <header className={ `header ${ isMenuOpened && 'header_menu-opened' }` }>
@@ -20,6 +20,7 @@ function Header({ onLogin, loggedIn, isMenuOpened, onMenuClick, onMenuClose, isS
                 loggedIn={ loggedIn }
                 isMenuOpened={ isMenuOpened }
                 onMenuClose={ onMenuClose }
+                onLogout={ onLogout }
                 />
             </header>
             <div className={ `header-overlay ${ isMenuOpened && 'header-overlay_menu-opened' }` }/>

@@ -51,6 +51,23 @@
     box-shadow: 0 5px 15px rgba(14, 26, 57, 0.2);
 }
 
+.search__input-error {
+    visibility: visible;
+    position: absolute;
+    bottom: -30px;
+    left: 25px;
+    color: #FF0000;
+    font-size: 16px;
+    line-height: 22px;
+}
+
+.search__input-error_hidden {
+    visibility: hidden;
+    position: absolute;
+    bottom: -30px;
+    left: 0;
+}
+
 @media screen and (max-width: 880px) {
     .search__form {
         max-width: 452px;

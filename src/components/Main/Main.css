@@ -69,6 +69,11 @@
     font-weight: bold;
 }
 
+.main__description_bold-capitalize {
+    font-weight: bold;
+    text-transform: capitalize;
+}
+
 @media screen and (max-width: 880px) {
     .main__title_saved-news {
         max-width: 336px;
